@@ -70,7 +70,7 @@ oc apply -f secrets.yaml -n jfrog-helm
 5. Install the helm chart:
 
 ```
-helm install -f values.yaml artifactory .
+helm install -f artifactory/values.yaml artifactory artifactory
 ```
 
 6. Create a route:
