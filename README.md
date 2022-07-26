@@ -67,6 +67,10 @@ oc apply -f rbac.yaml -n jfrog-helm
 oc apply -f secrets.yaml -n jfrog-helm
 ```
 
+Note:  I created the joinkey, masterkey, and license secrets based on the process in the Artifcatory docs:
+https://jfrog.com/knowledge-base/artifactory-installation-quick-start-guide-helm/
+
+
 5. Install the helm chart:
 
 ```
