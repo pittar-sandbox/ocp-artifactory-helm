@@ -1,0 +1,16 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: artifactory
+  namespace: jfrog-helm
+spec:
+  port:
+    targetPort: http-router
+  tls:
+    insecureEdgeTerminationPolicy: None
+    termination: edge
+  to:
+    kind: Service
+    name: artifactory
+    weight: 100
+  wildcardPolicy: None
