@@ -39,6 +39,13 @@ Lines 517-524:
     dataKey: art.lic
 ```
 
+Lines 1569-1571:
+```
+# Nginx
+nginx:
+  enabled: false
+```
+
 Lines 1829-1836:
 ```
   http:
